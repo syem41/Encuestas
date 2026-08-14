@@ -11,7 +11,7 @@ return [
     'fallback_locale' => 'en',
     'faker_locale' => 'es_PE',
     'cipher' => 'AES-256-CBC',
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY', 'base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA='),
     'providers' => [
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
